@@ -15,13 +15,13 @@ class PageSeeder extends BaseSeeder
     {
         $pages = [
             [
-                'name' => 'In\u{ED}cio',
+                'name' => 'Início',
                 'content' =>
                     Html::tag(
                         'div',
-                        '[about-banner title="Ol\u{E1}, sou o &lt;span&gt;Steven&lt;/span&gt;" subtitle="Bem-vindo ao meu blogue" text_muted="Blogger de Viagens., Escritor de Conte\u{FA}dos., Guias Gastron\u{F3}micos" image="general/featured.png" newsletter_title="N\u{E3}o perca as \u{FA}ltimas not\u{ED}cias sobre dicas de viagem, avalia\u{E7}\u{F5}es de hot\u{E9}is, guias gastron\u{F3}micos..." image="general/featured.png" show_newsletter_form="yes"][/about-banner]'
+                        '[about-banner title="Olá, sou o &lt;span&gt;Steven&lt;/span&gt;" subtitle="Bem-vindo ao meu blogue" text_muted="Blogger de Viagens., Escritor de Conteúdos., Guias Gastronómicos" image="general/featured.png" newsletter_title="Não perca as últimas notícias sobre dicas de viagem, avaliações de hotéis, guias gastronómicos..." image="general/featured.png" show_newsletter_form="yes"][/about-banner]'
                     ) .
-                    Html::tag('div', '[featured-posts title="Publica\u{E7}\u{F5}es em Destaque"][/featured-posts]') .
+                    Html::tag('div', '[featured-posts title="Publicações em Destaque"][/featured-posts]') .
                     Html::tag('div', '[blog-categories-posts category_id="2"][/blog-categories-posts]') .
                     Html::tag(
                         'div',
@@ -32,7 +32,7 @@ class PageSeeder extends BaseSeeder
                 'template' => 'homepage',
             ],
             [
-                'name' => 'In\u{ED}cio 2',
+                'name' => 'Início 2',
                 'content' =>
                     Html::tag('div', '[featured-posts-slider-full][/featured-posts-slider-full]') .
                     Html::tag('div', '[blog-categories-posts category_id="2"][/blog-categories-posts]') .
@@ -45,7 +45,7 @@ class PageSeeder extends BaseSeeder
                 'template' => 'homepage',
             ],
             [
-                'name' => 'In\u{ED}cio 3',
+                'name' => 'Início 3',
                 'content' =>
                     Html::tag('div', '[featured-posts-slider][/featured-posts-slider]') .
                     Html::tag('div', '[blog-categories-posts category_id="2"][/blog-categories-posts]') .
@@ -66,20 +66,20 @@ class PageSeeder extends BaseSeeder
                 'name' => 'Contacto',
                 'content' => Html::tag(
                     'p',
-                    'Morada: Pra\u{E7}a do Com\u{E9}rcio, 1100-148 Lisboa, Portugal'
+                    'Morada: Praça do Comércio, 1100-148 Lisboa, Portugal'
                 ) .
                     Html::tag('p', 'Linha de Apoio: 800 202 112') .
                     Html::tag('p', 'Email: contact@botble.com') .
                     Html::tag(
                         'p',
-                        '[google-map]Pra\u{E7}a do Com\u{E9}rcio, 1100-148 Lisboa[/google-map]'
+                        '[google-map]Praça do Comércio, 1100-148 Lisboa[/google-map]'
                     ) .
-                    Html::tag('p', 'Para uma resposta mais r\u{E1}pida, utilize o formul\u{E1}rio de contacto abaixo.') .
+                    Html::tag('p', 'Para uma resposta mais rápida, utilize o formulário de contacto abaixo.') .
                     Html::tag('p', '[contact-form][/contact-form]'),
                 'template' => 'default',
             ],
             [
-                'name' => 'Pol\u{ED}tica de Cookies',
+                'name' => 'Política de Cookies',
                 'content' => Html::tag('h3', 'Consentimento de Cookies da UE') .
                     Html::tag(
                         'p',
@@ -88,15 +88,15 @@ class PageSeeder extends BaseSeeder
                     Html::tag('h4', 'Dados Essenciais') .
                     Html::tag(
                         'p',
-                        'Os Dados Essenciais s\u{E3}o necess\u{E1}rios para o funcionamento t\u{E9}cnico do site que est\u{E1} a visitar. N\u{E3}o pode desativ\u{E1}-los.'
+                        'Os Dados Essenciais são necessários para o funcionamento técnico do site que está a visitar. Não pode desativá-los.'
                     ) .
                     Html::tag(
                         'p',
-                        '- Cookie de Sess\u{E3}o: O PHP utiliza um cookie para identificar sess\u{F5}es de utilizador. Sem este cookie o website n\u{E3}o funciona.'
+                        '- Cookie de Sessão: O PHP utiliza um cookie para identificar sessões de utilizador. Sem este cookie o website não funciona.'
                     ) .
                     Html::tag(
                         'p',
-                        '- Cookie XSRF-Token: O Laravel gera automaticamente um "token" CSRF para cada sess\u{E3}o de utilizador ativa gerida pela aplica\u{E7}\u{E3}o. Este token \u{E9} utilizado para verificar que o utilizador autenticado \u{E9} quem efetivamente realiza os pedidos \u{E0} aplica\u{E7}\u{E3}o.'
+                        '- Cookie XSRF-Token: O Laravel gera automaticamente um "token" CSRF para cada sessão de utilizador ativa gerida pela aplicação. Este token é utilizado para verificar que o utilizador autenticado é quem efetivamente realiza os pedidos à aplicação.'
                     ),
                 'template' => 'default',
             ],
