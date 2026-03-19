@@ -19,7 +19,7 @@ class PageSeeder extends BaseSeeder
                 'content' =>
                     Html::tag(
                         'div',
-                        '[about-banner title="Olá, sou o &lt;span&gt;Steven&lt;/span&gt;" subtitle="Bem-vindo ao meu blogue" text_muted="Blogger de Viagens., Escritor de Conteúdos., Guias Gastronómicos" image="general/featured.png" newsletter_title="Não perca as últimas notícias sobre dicas de viagem, avaliações de hotéis, guias gastronómicos..." image="general/featured.png" show_newsletter_form="yes"][/about-banner]'
+                        '[about-banner title="Jornalismo &lt;span&gt;Cidadão&lt;/span&gt;" subtitle="A voz de quem não se cala" text_muted="Política., Sociedade., Justiça Social" image="general/featured.png" newsletter_title="Não perca as últimas investigações, denúncias e reportagens de cidadãos como você..." image="general/featured.png" show_newsletter_form="yes"][/about-banner]'
                     ) .
                     Html::tag('div', '[featured-posts title="Publicações em Destaque"][/featured-posts]') .
                     Html::tag('div', '[blog-categories-posts category_id="2"][/blog-categories-posts]') .
