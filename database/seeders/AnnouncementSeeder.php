@@ -14,9 +14,9 @@ class AnnouncementSeeder extends BaseSeeder
         Announcement::query()->truncate();
 
         $announcements = [
-            'Cyber Monday: Save big on the Creative Cloud All Apps plan for individuals through 2 Dec',
-            'Students and teachers save a massive 71% on Creative Cloud All Apps',
-            'Black Friday and Cyber Monday 2023 Deals for Motion Designers, grab it now!',
+            'Submit your news report securely — your identity can remain anonymous. Every story matters.',
+            'Have you witnessed injustice or misconduct? Report it here. We verify and publish with your consent.',
+            'Join thousands of citizens holding power to account — subscribe to our weekly digest.',
         ];
 
         $now = Carbon::now();

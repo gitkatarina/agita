@@ -23,34 +23,34 @@ class BlogSeeder extends BaseSeeder
                 'is_default' => true,
             ],
             [
-                'name' => 'Travel',
+                'name' => 'Politics',
                 'children' => [
                     [
-                        'name' => 'Guides',
+                        'name' => 'Analysis',
                     ],
                 ],
             ],
             [
-                'name' => 'Destination',
+                'name' => 'Society',
                 'children' => [
                     [
-                        'name' => 'Food',
+                        'name' => 'Human Rights',
                     ],
                 ],
             ],
             [
-                'name' => 'Hotels',
+                'name' => 'Economy',
                 'children' => [
                     [
-                        'name' => 'Review',
+                        'name' => 'Labor',
                     ],
                 ],
             ],
             [
-                'name' => 'Healthy',
+                'name' => 'Environment',
             ],
             [
-                'name' => 'Lifestyle',
+                'name' => 'Culture',
             ],
         ];
 
@@ -58,19 +58,19 @@ class BlogSeeder extends BaseSeeder
 
         $tags = [
             [
-                'name' => 'General',
+                'name' => 'Politics',
             ],
             [
-                'name' => 'Design',
+                'name' => 'Justice',
             ],
             [
-                'name' => 'Fashion',
+                'name' => 'Democracy',
             ],
             [
-                'name' => 'Branding',
+                'name' => 'Society',
             ],
             [
-                'name' => 'Modern',
+                'name' => 'Rights',
             ],
         ];
 
@@ -78,94 +78,94 @@ class BlogSeeder extends BaseSeeder
 
         $posts = [
             [
-                'name' => 'The Top 2020 Handbag Trends to Know',
+                'name' => 'Government Announces Sweeping Social Welfare Reform Package',
             ],
             [
-                'name' => 'Top Search Engine Optimization Strategies!',
+                'name' => 'Protests Erupt in Capital Over Education Budget Cuts',
             ],
             [
-                'name' => 'Which Company Would You Choose?',
+                'name' => 'Parliament Votes on Historic Environmental Protection Bill',
             ],
             [
-                'name' => 'Used Car Dealer Sales Tricks Exposed',
+                'name' => 'Community Leaders Demand Action on Housing Crisis',
             ],
             [
-                'name' => '20 Ways To Sell Your Product Faster',
+                'name' => 'Investigation Reveals Corruption in Public Procurement',
             ],
             [
-                'name' => 'The Secrets Of Rich And Famous Writers',
+                'name' => 'Citizens March for Gender Equality in Major Cities',
             ],
             [
-                'name' => 'Imagine Losing 20 Pounds In 14 Days!',
+                'name' => 'Supreme Court Rules on Landmark Civil Rights Case',
             ],
             [
-                'name' => 'Are You Still Using That Slow, Old Typewriter?',
+                'name' => 'Local Elections: What the Results Mean for Public Policy',
             ],
             [
-                'name' => 'A Skin Cream That’s Proven To Work',
+                'name' => 'Rising Unemployment Sparks National Debate Over Labor Laws',
             ],
             [
-                'name' => '10 Reasons To Start Your Own, Profitable Website!',
+                'name' => 'Report Exposes Systemic Abuses in Detention Centers',
             ],
             [
-                'name' => 'Simple Ways To Reduce Your Unwanted Wrinkles!',
+                'name' => 'Anonymous Whistleblower Exposes State Surveillance Program',
             ],
             [
-                'name' => 'Apple iMac with Retina 5K display review',
+                'name' => 'Social Movement Gains Momentum After Viral Protest Videos',
             ],
             [
-                'name' => '10,000 Web Site Visitors In One Month:Guaranteed',
+                'name' => 'New Legislation Threatens Press Freedom, Journalists Warn',
             ],
             [
-                'name' => 'Unlock The Secrets Of Selling High Ticket Items',
+                'name' => 'Healthcare Workers Strike Amid Decades of Underfunding',
             ],
             [
-                'name' => '4 Expert Tips On How To Choose The Right Men’s Wallet',
+                'name' => 'Indigenous Communities Fight for Land Rights Recognition',
             ],
             [
-                'name' => 'Sexy Clutches: How to Buy & Wear a Designer Clutch Bag',
+                'name' => 'Youth Climate Activists Push for Urgent Legislative Action',
             ],
         ];
 
         foreach ($posts as $index => &$item) {
             $item['content'] =
-                '<p>Fretful human far recklessly while caterpillar well a well blubbered added one a some far whispered rampantly whispered while irksome far clung irrespective wailed more rosily and where saluted while black dear so yikes as considering recast to some crass until.</p>' .
+                '<p>Citizens and activists gathered this week as officials confirmed the report, raising concerns about transparency and accountability in government institutions. Multiple sources, some of whom requested anonymity for fear of retaliation, corroborated the findings presented in this investigation.</p>' .
                 ($index % 3 == 0 ? Html::tag(
                     'p',
                     '[youtube-video]https://www.youtube.com/watch?v=SlPhMPnQ58k[/youtube-video]'
                 ) : '') .
                 '   <hr class="wp-block-separator is-style-dots">
-                    <p>Thanks sniffed in hello after in foolhardy and some far purposefully much one at the much conjointly leapt skimpily that quail sheep some goodness <a href="/">nightingale</a> the instead exited expedient up far ouch mellifluous altruistic and and lighted more instead much when ferret but the.</p>
+                    <p>The situation has drawn widespread attention from civil society organizations and opposition leaders, who are calling for an independent inquiry. <a href="/">Community representatives</a> held an emergency meeting to coordinate a formal response to authorities.</p>
                     <figure class="wp-block-gallery columns-3 wp-block-image">
                         <ul>
                             <li><a href="/"><img src="/storage/news/' . rand(1, 5) . '.jpg" alt="image 1"></a></li>
                             <li><a href="/"><img src="/storage/news/' . rand(6, 12) . '.jpg" alt="image 2"></a></li>
                             <li><a href="/"><img src="/storage/news/' . rand(13, 19) . '.jpg" alt="image 3"></a></li>
                         </ul>
-                        <figcaption> <i class="ti-credit-card mr-5"></i>Image credit: Behance </figcaption>
+                        <figcaption> <i class="ti-credit-card mr-5"></i>Photos submitted by readers </figcaption>
                     </figure>
                     <hr class="section-divider">
-                    <p>Yet more some certainly yet alas abandonedly whispered <a href="/">intriguingly</a><sup><a href="/">[2]</a></sup> well extensive one howled talkative admonishingly below a rethought overlaid dear gosh activated less <a href="/">however</a> hawk yet oh scratched ostrich some outside crud irrespective lightheartedly and much far amenably that the elephant since when.</p>
-                    <h2>The Guitar Legends</h2>
-                    <p>Furrowed this in the upset <a href="/">some across</a><sup><a href="/">[3]</a></sup> tiger oh loaded house gosh whispered <a href="/">faltering alas</a><sup><a href="/">[4]</a></sup> ouch cuckoo coward in scratched undid together bit fumblingly so besides salamander heron during the jeepers hello fitting jauntily much smoothly globefish darn blessedly far so along bluebird leopard and.</p>
+                    <p>Legal experts <a href="/">consulted by our editorial team</a><sup><a href="/">[2]</a></sup> warned that the developments could set a precedent with far-reaching implications for civil liberties and the rule of law. Advocacy groups have already begun preparing legal challenges.</p>
+                    <h2>Background and Context</h2>
+                    <p>The issue is not new. Complaints have been filed over the past several years, but institutional responses have been slow and insufficient. <a href="/">Internal documents reviewed</a><sup><a href="/">[3]</a></sup> by this publication suggest that decision-makers were aware of the problem long before it became public.</p>
                     <blockquote>
-                        <p>Integer eu faucibus <a href="/">dolor</a><sup><a href="/">[5]</a></sup>. Ut venenatis tincidunt diam elementum imperdiet. Etiam accumsan semper nisl eu congue. Sed aliquam magna erat, ac eleifend lacus rhoncus in.</p>
+                        <p>"The people have a right to know what is being done in their name and with their taxes. Silence is complicity." — anonymous source within the institution.</p>
                     </blockquote>
-                    <p>Fretful human far recklessly while caterpillar well a well blubbered added one a some far whispered rampantly whispered while irksome far clung irrespective wailed more rosily and where saluted while black dear so yikes as considering recast to some crass until cow much less and rakishly overdrew consistent for by responsible oh one hypocritical less bastard hey oversaw zebra browbeat a well.</p>
-                    <h3>Getting Crypto Rich</h3>
+                    <p>Affected communities are demanding concrete action and not just promises. Grassroots organizations have launched a petition that has already gathered tens of thousands of signatures, and a march is planned for the coming weeks.</p>
+                    <h3>What Happens Next</h3>
                     <hr class="wp-block-separator is-style-wide">
                     <div class="wp-block-image">
                         <figure class="alignleft is-resized">
                             <img class="border-radius-5" src="/storage/news/' . rand(10, 19) . '.jpg" alt="image 4">
-                            <figcaption> And far contrary smoked some contrary among stealthy </figcaption>
+                            <figcaption> Demonstrators outside the municipal building </figcaption>
                         </figure>
                     </div>
-                    <p>And far contrary smoked some contrary among stealthy engagingly suspiciously a cockatoo far circa sank dully lewd slick cracked llama the much gecko yikes more squirrel sniffed this and the the much within uninhibited this abominable a blubbered overdid foresaw through alas the pessimistic.</p>
-                    <p>Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard roadrunner flapped lynx far that and jeepers giggled far and far bald that roadrunner python inside held shrewdly the manatee.</p>
+                    <p>Parliamentary committees are expected to convene hearings in the coming weeks. Opposition parties have signaled they will push for a vote of no confidence if the government fails to present a credible plan of action within 30 days.</p>
+                    <p>This report was submitted anonymously and verified by our editorial team. We encourage anyone with additional information to contact us securely through our tip line.</p>
                     <br>
                     <hr class="section-divider">
-                    <p>Thanks sniffed in hello after in foolhardy and some far purposefully much one at the much conjointly leapt skimpily that quail sheep some goodness nightingale the instead exited expedient up far ouch mellifluous altruistic and and lighted more instead much when ferret but the.</p>
-                    <p>Yet more some certainly yet alas abandonedly whispered intriguingly well extensive one howled talkative admonishingly below a rethought overlaid dear gosh activated less however hawk yet oh scratched ostrich some outside crud irrespective lightheartedly and much far amenably that the elephant since when.</p>
+                    <p>We remain committed to independent, citizen-driven journalism. If you have witnessed misconduct or injustice, you can submit your account anonymously or with your name. Every voice matters in holding power to account.</p>
+                    <p>Our editorial team reviews all submissions and protects source confidentiality as a core principle. Stories may be published in full or excerpted, always with the submitter\'s consent.</p>
                 ';
             $item['is_featured'] = $index < 10;
             $item['image'] = 'news/' . ($index + 1) . '.jpg';

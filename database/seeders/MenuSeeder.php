@@ -41,27 +41,27 @@ class MenuSeeder extends BaseSeeder
                         ],
                     ],
                     [
-                        'title' => 'Travel',
+                        'title' => 'Politics',
                         'reference_id' => 2,
                         'reference_type' => Category::class,
                     ],
                     [
-                        'title' => 'Destination',
+                        'title' => 'Society',
                         'reference_id' => 4,
                         'reference_type' => Category::class,
                     ],
                     [
-                        'title' => 'Hotels',
+                        'title' => 'Economy',
                         'reference_id' => 6,
                         'reference_type' => Category::class,
                     ],
                     [
-                        'title' => 'Lifestyle',
+                        'title' => 'Culture',
                         'reference_id' => 9,
                         'reference_type' => Category::class,
                     ],
                     [
-                        'title' => 'Blog',
+                        'title' => 'News',
                         'reference_id' => 4,
                         'reference_type' => Page::class,
                         'children' => [
@@ -107,12 +107,12 @@ class MenuSeeder extends BaseSeeder
                         'reference_type' => Page::class,
                     ],
                     [
-                        'title' => 'Blog',
+                        'title' => 'News',
                         'reference_id' => 4,
                         'reference_type' => Page::class,
                     ],
                     [
-                        'title' => 'Travel',
+                        'title' => 'Politics',
                         'reference_id' => 2,
                         'reference_type' => Category::class,
                     ],
