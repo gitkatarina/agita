@@ -18,7 +18,7 @@ class UserSeeder extends BaseUserSeeder
             MetaBox::saveMetaBoxData(
                 $user,
                 'bio',
-                'Hi, I’m ' . $user->name . ', Your Blogging Journey Guide 🖋️. Writing, one blog post at a time, to inspire, inform, and ignite your curiosity. Join me as we explore the world through words and embark on a limitless adventure of knowledge and creativity. Let’s bring your thoughts to life on these digital pages. 🌟 #BloggingAdventures'
+                'Olá, sou o ' . $user->name . ', o seu Guia para a Jornada do Blogue 🖋️. A escrever, uma publicação de cada vez, para inspirar, informar e acender a sua curiosidade. Junte-se a mim enquanto exploramos o mundo através das palavras e nos aventuramos numa jornada ilimitada de conhecimento e criatividade. Vamos dar vida aos seus pensamentos nestas páginas digitais. 🌟 #AventurasDoBlog'
             );
 
             $user->avatar_id = $files[0]['error'] ? 0 : $files[0]['data']->id;

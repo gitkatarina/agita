@@ -11,7 +11,7 @@ class ContactSeeder extends BaseSeeder
 {
     public function run(): void
     {
-        $faker = Factory::create();
+        $faker = Factory::create('pt_PT');
 
         Contact::query()->truncate();
 

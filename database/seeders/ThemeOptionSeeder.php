@@ -14,9 +14,9 @@ class ThemeOptionSeeder extends BaseSeeder
         $this->uploadFiles('general');
 
         $options = [
-            'cookie_consent_message' => 'Your experience on this site will be improved by allowing cookies ',
+            'cookie_consent_message' => 'A sua experiência neste site será melhorada ao permitir cookies',
             'cookie_consent_learn_more_url' => '/cookie-policy',
-            'cookie_consent_learn_more_text' => 'Cookie Policy',
+            'cookie_consent_learn_more_text' => 'Política de Cookies',
             'social_links' => [
                 [
                     ['key' => 'name', 'value' => 'Facebook'],
@@ -66,20 +66,20 @@ class ThemeOptionSeeder extends BaseSeeder
                     ['key' => 'background_color', 'value' => '#0a66c2'],
                 ],
             ],
-            'site_title' => 'Agita News - Political & Social Issues Reporting',
-            'seo_description' => 'Agita News is a citizen journalism platform for political and social reporting. Submit news anonymously or with your name. Holding power to account, one story at a time.',
-            'copyright' => '©%Y Agita News | Independent Citizen Journalism',
-            'designed_by' => 'Agita News | All rights reserved.',
+            'site_title' => 'Agita News - Jornalismo Político e Social',
+            'seo_description' => 'Agita News é uma plataforma de jornalismo cidadão para reportagem política e social. Submeta notícias anonimamente ou com o seu nome. A responsabilizar o poder, uma história de cada vez.',
+            'copyright' => '©%Y Agita News | Jornalismo Cidadão Independente',
+            'designed_by' => 'Agita News | Todos os direitos reservados.',
             'favicon' => 'general/favicon.png',
-            'site_description' => 'Citizen journalism for a more just society. Report what matters — anonymously or signed.',
-            'address' => 'Editorial contact available via secure tip line',
+            'site_description' => 'Jornalismo cidadão para uma sociedade mais justa. Reporte o que importa — anonimamente ou com o seu nome.',
+            'address' => 'Contacto editorial disponível através da linha de denúncia segura',
             'facebook' => 'https://facebook.com',
             'twitter' => 'https://twitter.com',
             'youtube' => 'https://youtube.com',
             'homepage_id' => '1',
             'blog_page_id' => '4',
             'logo' => 'general/logo.png',
-            'action_button_text' => 'Submit News',
+            'action_button_text' => 'Submeter Notícia',
             'action_button_url' => '/contact',
             'vi-primary_font' => 'Roboto',
         ];

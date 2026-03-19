@@ -15,109 +15,109 @@ class MenuSeeder extends BaseSeeder
     {
         $data = [
             [
-                'name' => 'Main menu',
+                'name' => 'Menu Principal',
                 'slug' => 'main-menu',
                 'location' => 'main-menu',
                 'items' => [
                     [
-                        'title' => 'Home',
+                        'title' => 'Início',
                         'url' => '/',
                         'icon_font' => 'elegant-icon icon_house_alt mr-5',
                         'children' => [
                             [
-                                'title' => 'Home default',
+                                'title' => 'Início padrão',
                                 'url' => '/',
                             ],
                             [
-                                'title' => 'Home 2',
+                                'title' => 'Início 2',
                                 'reference_id' => 2,
                                 'reference_type' => Page::class,
                             ],
                             [
-                                'title' => 'Home 3',
+                                'title' => 'Início 3',
                                 'reference_id' => 3,
                                 'reference_type' => Page::class,
                             ],
                         ],
                     ],
                     [
-                        'title' => 'Politics',
+                        'title' => 'Política',
                         'reference_id' => 2,
                         'reference_type' => Category::class,
                     ],
                     [
-                        'title' => 'Society',
+                        'title' => 'Sociedade',
                         'reference_id' => 4,
                         'reference_type' => Category::class,
                     ],
                     [
-                        'title' => 'Economy',
+                        'title' => 'Economia',
                         'reference_id' => 6,
                         'reference_type' => Category::class,
                     ],
                     [
-                        'title' => 'Culture',
+                        'title' => 'Cultura',
                         'reference_id' => 9,
                         'reference_type' => Category::class,
                     ],
                     [
-                        'title' => 'News',
+                        'title' => 'Notícias',
                         'reference_id' => 4,
                         'reference_type' => Page::class,
                         'children' => [
                             [
-                                'title' => 'Grid layout',
+                                'title' => 'Layout Grelha',
                                 'reference_id' => 9,
                                 'reference_type' => Page::class,
                             ],
                             [
-                                'title' => 'List layout',
+                                'title' => 'Layout Lista',
                                 'reference_id' => 7,
                                 'reference_type' => Page::class,
                             ],
                             [
-                                'title' => 'Big layout',
+                                'title' => 'Layout Grande',
                                 'reference_id' => 8,
                                 'reference_type' => Page::class,
                             ],
                         ],
                     ],
                     [
-                        'title' => 'Galleries',
+                        'title' => 'Galerias',
                         'url' => '/galleries',
                     ],
                     [
-                        'title' => 'Contact',
+                        'title' => 'Contacto',
                         'reference_id' => 5,
                         'reference_type' => Page::class,
                     ],
                 ],
             ],
             [
-                'name' => 'Quick links',
+                'name' => 'Ligações Rápidas',
                 'slug' => 'quick-links',
                 'items' => [
                     [
-                        'title' => 'Homepage',
+                        'title' => 'Página Inicial',
                         'url' => '/',
                     ],
                     [
-                        'title' => 'Contact',
+                        'title' => 'Contacto',
                         'reference_id' => 5,
                         'reference_type' => Page::class,
                     ],
                     [
-                        'title' => 'News',
+                        'title' => 'Notícias',
                         'reference_id' => 4,
                         'reference_type' => Page::class,
                     ],
                     [
-                        'title' => 'Politics',
+                        'title' => 'Política',
                         'reference_id' => 2,
                         'reference_type' => Category::class,
                     ],
                     [
-                        'title' => 'Galleries',
+                        'title' => 'Galerias',
                         'url' => '/galleries',
                     ],
                 ],

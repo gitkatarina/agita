@@ -19,7 +19,7 @@ class WidgetSeeder extends BaseSeeder
                 'position' => 0,
                 'data' => [
                     'id' => 'CustomMenuWidget',
-                    'name' => 'Quick links',
+                    'name' => 'Ligações Rápidas',
                     'menu_id' => 'quick-links',
                 ],
             ],
@@ -29,7 +29,7 @@ class WidgetSeeder extends BaseSeeder
                 'position' => 1,
                 'data' => [
                     'id' => 'TagsWidget',
-                    'name' => 'Tags',
+                    'name' => 'Etiquetas',
                     'number_display' => 5,
                 ],
             ],
@@ -39,7 +39,7 @@ class WidgetSeeder extends BaseSeeder
                 'position' => 2,
                 'data' => [
                     'id' => 'NewsletterWidget',
-                    'name' => 'Newsletter',
+                    'name' => 'Boletim Informativo',
                 ],
             ],
             [
@@ -48,8 +48,8 @@ class WidgetSeeder extends BaseSeeder
                 'position' => 0,
                 'data' => [
                     'id' => 'AboutWidget',
-                    'name' => "Hello, I'm Steven",
-                    'description' => 'Hi, I’m Steven, a Florida native, who left my career in corporate wealth management six years ago to embark on a summer of soul searching that would change the course of my life forever.',
+                    ‘name’ => ‘Olá, sou o Steven’,
+                    ‘description’ => ‘Olá, sou o Steven, natural de Lisboa, que abandonei a minha carreira na gestão de patrimónios há seis anos para embarcar numa jornada de descoberta pessoal que mudaria o rumo da minha vida para sempre.’,
                     'image' => 'general/author.jpg',
                 ],
             ],
@@ -59,7 +59,7 @@ class WidgetSeeder extends BaseSeeder
                 'position' => 1,
                 'data' => [
                     'id' => 'PopularPostsWidget',
-                    'name' => 'Most popular',
+                    'name' => 'Mais populares',
                     'number_display' => 5,
                 ],
             ],
@@ -69,7 +69,7 @@ class WidgetSeeder extends BaseSeeder
                 'position' => 2,
                 'data' => [
                     'id' => 'GalleriesWidget',
-                    'name' => 'Galleries',
+                    'name' => 'Galerias',
                     'number_display' => 6,
                 ],
             ],

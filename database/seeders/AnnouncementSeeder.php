@@ -14,9 +14,9 @@ class AnnouncementSeeder extends BaseSeeder
         Announcement::query()->truncate();
 
         $announcements = [
-            'Submit your news report securely — your identity can remain anonymous. Every story matters.',
-            'Have you witnessed injustice or misconduct? Report it here. We verify and publish with your consent.',
-            'Join thousands of citizens holding power to account — subscribe to our weekly digest.',
+            'Submeta o seu relatório de notícias de forma segura — a sua identidade pode permanecer anónima. Cada história importa.',
+            'Testemunhou injustiça ou irregularidade? Reporte aqui. Verificamos e publicamos com o seu consentimento.',
+            'Junte-se a milhares de cidadãos a responsabilizar o poder — subscreva o nosso resumo semanal.',
         ];
 
         $now = Carbon::now();

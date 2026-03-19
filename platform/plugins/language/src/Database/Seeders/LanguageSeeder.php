@@ -30,12 +30,12 @@ class LanguageSeeder extends BaseSeeder
         }
 
         Language::query()->create([
-            'lang_name' => 'English',
-            'lang_locale' => 'en',
+            'lang_name' => 'Português',
+            'lang_locale' => 'pt',
             'lang_is_default' => true,
-            'lang_code' => 'en_US',
+            'lang_code' => 'pt_PT',
             'lang_is_rtl' => false,
-            'lang_flag' => 'us',
+            'lang_flag' => 'pt',
             'lang_order' => 0,
         ]);
 

@@ -19,26 +19,26 @@ class GallerySeeder extends BaseSeeder
         GalleryModel::query()->truncate();
         GalleryMeta::query()->truncate();
 
-        $faker = Factory::create();
+        $faker = Factory::create('pt_PT');
 
         $galleries = [
             [
-                'name' => 'Perfect',
+                'name' => 'Perfeito',
             ],
             [
-                'name' => 'New Day',
+                'name' => 'Novo Dia',
             ],
             [
-                'name' => 'Happy Day',
+                'name' => 'Dia Feliz',
             ],
             [
-                'name' => 'Nature',
+                'name' => 'Natureza',
             ],
             [
-                'name' => 'Morning',
+                'name' => 'Manhã',
             ],
             [
-                'name' => 'Photography',
+                'name' => 'Fotografia',
             ],
         ];
 

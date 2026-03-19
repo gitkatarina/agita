@@ -17,7 +17,7 @@ class AdsSeeder extends BaseSeeder
 
         $items = [
             [
-                'name' => 'Panel Ads',
+                'name' => 'Anúncios do Painel',
                 'location' => 'panel-ads',
             ],
         ];
