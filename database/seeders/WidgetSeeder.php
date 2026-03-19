@@ -48,8 +48,8 @@ class WidgetSeeder extends BaseSeeder
                 'position' => 0,
                 'data' => [
                     'id' => 'AboutWidget',
-                    ‘name’ => ‘Olá, sou o Steven’,
-                    ‘description’ => ‘Olá, sou o Steven, natural de Lisboa, que abandonei a minha carreira na gestão de patrimónios há seis anos para embarcar numa jornada de descoberta pessoal que mudaria o rumo da minha vida para sempre.’,
+                    'name' => 'Olá, sou o Steven',
+                    'description' => 'Olá, sou o Steven, natural de Lisboa, que abandonei a minha carreira na gestão de patrimónios há seis anos para embarcar numa jornada de descoberta pessoal que mudaria o rumo da minha vida para sempre.',
                     'image' => 'general/author.jpg',
                 ],
             ],
