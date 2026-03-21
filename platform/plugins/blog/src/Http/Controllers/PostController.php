@@ -8,6 +8,7 @@ use Botble\Base\Http\Responses\BaseHttpResponse;
 use Botble\Base\Supports\Breadcrumb;
 use Botble\Blog\Forms\PostForm;
 use Botble\Blog\Http\Requests\PostRequest;
+use Botble\Blog\Jobs\PublishToSocialMediaJob;
 use Botble\Blog\Models\Post;
 use Botble\Blog\Services\StoreCategoryService;
 use Botble\Blog\Services\StoreTagService;
@@ -50,6 +51,14 @@ class PostController extends BaseController
 
         $categoryService->execute($request, $post);
 
+        if ($post->status->getValue() === 'published') {
+            foreach (['facebook', 'twitter', 'linkedin', 'instagram'] as $platform) {
+                if ($request->input("publish_to_{$platform}")) {
+                    PublishToSocialMediaJob::dispatch($post, $platform);
+                }
+            }
+        }
+
         return $this
             ->httpResponse()
             ->setPreviousRoute('posts.index')
@@ -82,6 +91,14 @@ class PostController extends BaseController
         $tagService->execute($request, $post);
 
         $categoryService->execute($request, $post);
+
+        if ($post->status->getValue() === 'published') {
+            foreach (['facebook', 'twitter', 'linkedin', 'instagram'] as $platform) {
+                if ($request->input("publish_to_{$platform}")) {
+                    PublishToSocialMediaJob::dispatch($post, $platform);
+                }
+            }
+        }
 
         return $this
             ->httpResponse()

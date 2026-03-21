@@ -9,6 +9,7 @@ use Botble\Blog\Enums\PostStatusEnum;
 use Botble\Revision\RevisionableTrait;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 
 class Post extends BaseModel
@@ -67,6 +68,11 @@ class Post extends BaseModel
     public function categories(): BelongsToMany
     {
         return $this->belongsToMany(Category::class, 'post_categories');
+    }
+
+    public function socialPublications(): HasMany
+    {
+        return $this->hasMany(PostSocialPublication::class);
     }
 
     public function author(): MorphTo

@@ -140,6 +140,16 @@ class BlogServiceProvider extends ServiceProvider
                     ->withPriority(120)
                     ->withRoute('blog.settings')
             );
+
+            PanelSectionManager::registerItem(
+                SettingOthersPanelSection::class,
+                fn () => PanelSectionItem::make('social-media')
+                    ->setTitle(trans('plugins/blog::social-media.settings.title'))
+                    ->withIcon('ti ti-brand-facebook')
+                    ->withDescription(trans('plugins/blog::social-media.settings.description'))
+                    ->withPriority(121)
+                    ->withRoute('blog.social-media-settings')
+            );
         });
 
         PanelSectionManager::setGroupId('data-synchronize')->beforeRendering(function (): void {

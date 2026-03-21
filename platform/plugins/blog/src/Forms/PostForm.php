@@ -7,6 +7,7 @@ use Botble\Base\Forms\FieldOptions\DescriptionFieldOption;
 use Botble\Base\Forms\FieldOptions\IsFeaturedFieldOption;
 use Botble\Base\Forms\FieldOptions\MediaImageFieldOption;
 use Botble\Base\Forms\FieldOptions\NameFieldOption;
+use Botble\Base\Forms\FieldOptions\OnOffFieldOption;
 use Botble\Base\Forms\FieldOptions\RadioFieldOption;
 use Botble\Base\Forms\FieldOptions\SelectFieldOption;
 use Botble\Base\Forms\FieldOptions\StatusFieldOption;
@@ -42,6 +43,22 @@ class PostForm extends FormAbstract
             )
             ->add('content', EditorField::class, ContentFieldOption::make()->allowedShortcodes())
             ->add('status', SelectField::class, StatusFieldOption::make())
+            ->when(setting('social_facebook_enabled'), function (PostForm $form): void {
+                $form->add('publish_to_facebook', OnOffField::class,
+                    OnOffFieldOption::make()->label(trans('plugins/blog::social-media.publish_to_facebook')));
+            })
+            ->when(setting('social_twitter_enabled'), function (PostForm $form): void {
+                $form->add('publish_to_twitter', OnOffField::class,
+                    OnOffFieldOption::make()->label(trans('plugins/blog::social-media.publish_to_twitter')));
+            })
+            ->when(setting('social_linkedin_enabled'), function (PostForm $form): void {
+                $form->add('publish_to_linkedin', OnOffField::class,
+                    OnOffFieldOption::make()->label(trans('plugins/blog::social-media.publish_to_linkedin')));
+            })
+            ->when(setting('social_instagram_enabled'), function (PostForm $form): void {
+                $form->add('publish_to_instagram', OnOffField::class,
+                    OnOffFieldOption::make()->label(trans('plugins/blog::social-media.publish_to_instagram')));
+            })
             ->when(get_post_formats(true), function (PostForm $form, array $postFormats): void {
                 if (count($postFormats) > 1) {
                     $choices = [];

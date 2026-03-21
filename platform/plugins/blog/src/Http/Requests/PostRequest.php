@@ -24,6 +24,10 @@ class PostRequest extends Request
             'status' => Rule::in(BaseStatusEnum::values()),
             'is_featured' => [new OnOffRule()],
             'image' => ['nullable', 'string', new MediaImageRule()],
+            'publish_to_facebook' => ['nullable', new OnOffRule()],
+            'publish_to_twitter' => ['nullable', new OnOffRule()],
+            'publish_to_linkedin' => ['nullable', new OnOffRule()],
+            'publish_to_instagram' => ['nullable', new OnOffRule()],
         ];
 
         $postFormats = PostFormat::getPostFormats(true);

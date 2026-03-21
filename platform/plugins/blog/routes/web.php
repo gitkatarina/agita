@@ -79,6 +79,17 @@ Route::group(['namespace' => 'Botble\Blog\Http\Controllers'], function (): void 
                 'uses' => 'Settings\BlogSettingController@update',
             ]);
         });
+
+        Route::group(['prefix' => 'settings/social-media', 'as' => 'blog.social-media-settings', 'permission' => 'blog.settings'], function (): void {
+            Route::get('/', [
+                'uses' => 'Settings\SocialMediaSettingController@edit',
+            ]);
+
+            Route::put('/', [
+                'as' => '.update',
+                'uses' => 'Settings\SocialMediaSettingController@update',
+            ]);
+        });
     });
 
     if (defined('THEME_MODULE_SCREEN_NAME')) {
