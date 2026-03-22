@@ -1,8 +1,8 @@
-<x-core::alert type="warning">
+<x-core::alert type="success">
     @if ($manageLicense = auth()->guard()->user()->hasPermission('core.manage.license'))
-        <div>Your license is invalid. Please activate your license!</div>
+        <div>Your license is activated successfully!</div>
     @else
-        <div>You doesn't have permission to activate the license!</div>
+        <div>Your license is activated successfully!</div>
     @endif
 </x-core::alert>
 
