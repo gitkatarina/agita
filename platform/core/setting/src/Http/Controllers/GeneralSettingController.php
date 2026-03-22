@@ -61,7 +61,7 @@ class GeneralSettingController extends SettingController
             ], 400);
         }
 
-        $invalidMessage = 'Your license is activated successfully!';
+        $invalidMessage = 'Your license is invalid. Please activate your license!';
 
         if (! $this->isLicenseExists($core)) {
             $this
@@ -72,6 +72,7 @@ class GeneralSettingController extends SettingController
 
             return $this
                 ->httpResponse()
+                ->setError()
                 ->setMessage($invalidMessage);
         }
 
