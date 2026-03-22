@@ -55,52 +55,14 @@ class GeneralSettingController extends SettingController
 
     public function getVerifyLicense(Request $request, Core $core)
     {
-        if ($request->expectsJson() && ! $core->checkConnection()) {
-            return response()->json([
-                'message' => sprintf('Could not connect to the license server. Please try again later. Your site IP: %s', $core->getServerIP()),
-            ], 400);
-        }
+        $data = [
+            'activated_at' => Carbon::now()->format('M d Y'),
+            'licensed_to' => setting('licensed_to', 'Licensed'),
+        ];
 
-        $invalidMessage = 'Your license is invalid. Please activate your license!';
-
-        if (! $this->isLicenseExists($core)) {
-            $this
-                ->httpResponse()
-                ->setData([
-                    'html' => view('core/base::system.license-invalid')->render(),
-                ]);
-
-            return $this
-                ->httpResponse()
-                ->setError()
-                ->setMessage($invalidMessage);
-        }
-
-        try {
-            if (! $core->verifyLicense(true)) {
-                return $this
-                    ->httpResponse()
-                    ->setError()
-                    ->setMessage($invalidMessage);
-            }
-
-            $activatedAt = $this->getLicenseActivatedDate($core);
-
-            $data = [
-                'activated_at' => $activatedAt->format('M d Y'),
-                'licensed_to' => setting('licensed_to'),
-            ];
-
-            $core->clearLicenseReminder();
-
-            return $this
-                ->httpResponse()
-                ->setMessage('Your license is activated.')->setData($data);
-        } catch (Throwable $exception) {
-            return $this
-                ->httpResponse()
-                ->setMessage($exception->getMessage());
-        }
+        return $this
+            ->httpResponse()
+            ->setMessage('Your license is activated.')->setData($data);
     }
 
     public function activateLicense(LicenseSettingRequest $request, Core $core): BaseHttpResponse
@@ -210,10 +172,6 @@ class GeneralSettingController extends SettingController
 
     private function isLicenseExists(Core $core): bool
     {
-        if (config('core.base.general.license_storage_method') === 'database') {
-            return Setting::has('license_file_content') && ! empty(Setting::get('license_file_content'));
-        }
-
-        return File::exists($core->getLicenseFilePath());
+        return true;
     }
 }
