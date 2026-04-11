@@ -40,7 +40,7 @@
             </aside>
         @endif
         <div class="header-banner">
-            <img src="{{ asset('themes/stories/images/header-banner.png') }}" alt="Banner" style="width: 100%; height: auto; display: block;">
+            <img src="{{ asset('storage/header-banner.png') }}" alt="Banner" style="width: 100%; height: auto; display: block;">
         </div>
         <header class="main-header header-style-1 font-heading">
             @if (is_plugin_active('language'))
