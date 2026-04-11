@@ -39,12 +39,7 @@
                 </div>
             </aside>
         @endif
-        <header class="main-header header-style-1 font-heading">
-            <div class="header-banner">
-                <a href="{{ BaseHelper::getHomepageUrl() }}">
-                    <img src="{{ Theme::asset()->url('images/header-banner.png') }}" alt="Banner" style="width: 100%; display: block;">
-                </a>
-            </div>
+        <header class="main-header header-style-1 font-heading" style="background-image: url('{{ Theme::asset()->url('images/header-banner.png') }}'); background-size: cover; background-position: center; background-repeat: no-repeat;">
             @if (is_plugin_active('language'))
                 @if ($languages = Theme::partial('language-switcher'))
                     <div class="header-select-language d-block d-sm-none">
