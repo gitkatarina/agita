@@ -39,7 +39,7 @@
                 </div>
             </aside>
         @endif
-        <header class="main-header header-style-1 font-heading" style="background-image: url('{{ asset('storage/header-banner.png') }}'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        <header class="main-header header-style-1 font-heading">
             @if (is_plugin_active('language'))
                 @if ($languages = Theme::partial('language-switcher'))
                     <div class="header-select-language d-block d-sm-none">
